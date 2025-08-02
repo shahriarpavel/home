@@ -201,6 +201,7 @@ a:hover {
   /* background: url(../../../public/images/lyfcap-border.png); */
 }
 
+
 .project-prev a {
   display: block;
   transition: 0.7s;
@@ -209,8 +210,9 @@ a:hover {
   background: url(../images/lyfcap-border.png);
   background-size: contain !important;
   background-repeat: no-repeat !important;
-  background-position: center !important;
+  background-position: center !important; 
 }
+
 
 .project-prev a img {
   width: 100%;
@@ -219,14 +221,14 @@ a:hover {
 .momument a {
   background: url(../images/the-momument-border.png);
 }
-.lyfcap a {
-  background: url(../images/lyfcap-border.png);
+.adventies a {
+  background: url(../images/adventies.co-border.png);
 }
 .grower a {
   background: url(../images/grower-border.png);
 }
-.adventies a {
-  background: url(../images/adventies.co-border.png);
+.jeetu a {
+  background: url(../images/jeetu-bhai-border.png);
 }
 
 .project-prev:hover a,
@@ -1099,19 +1101,18 @@ MAIN PAGE PROJECT PART START
     transform: scale(1.1);
   }
 
-  .momument a {
-    background: url(../images/768-the-momument-border.png);
-  }
-  .lyfcap a {
-    background: url(../images/lyfcap-border.png);
-  }
-  .grower a {
-    background: url(../images/grower-border.png);
-  }
-  .adventies a {
-    background: url(../images/adventies.co-border.png);
-  }
-
+.momument a {
+  background: url(../images/the-momument-border.png);
+}
+.adventies a {
+  background: url(../images/adventies.co-border.png);
+}
+.grower a {
+  background: url(../images/grower-border.png);
+}
+.jeetu a {
+  background: url(../images/jeetu-bhai-border.png);
+}
   /* * * * * * * * * * *
 MAIN PAGE PROJECT PART END
 * * * * * * * * * * */
@@ -1276,18 +1277,18 @@ MAIN PAGE PROJECT PART START
     background-repeat: no-repeat !important;
   }
 
-  .momument a {
-    background: url(../images/768-the-momument-border.png);
-  }
-  .lyfcap a {
-    background: url(../images/lyfcap-border.png);
-  }
-  .grower a {
-    background: url(../images/grower-border.png);
-  }
-  .adventies a {
-    background: url(../images/adventies.co-border.png);
-  }
+.momument a {
+  background: url(../images/the-momument-border.png);
+}
+.adventies a {
+  background: url(../images/adventies.co-border.png);
+}
+.grower a {
+  background: url(../images/grower-border.png);
+}
+.jeetu a {
+  background: url(../images/jeetu-bhai-border.png);
+}
 
   .project-det h2 {
     font-size: 36px;
@@ -1443,18 +1444,18 @@ MAIN PAGE PROJECT PART START
     background-position: center !important;
   }
 
-  .momument a {
-    background: url(../images/the-momument-border.png);
-  }
-  .lyfcap a {
-    background: url(../images/lyfcap-border.png);
-  }
-  .grower a {
-    background: url(../images/grower-border.png);
-  }
-  .adventies a {
-    background: url(../images/adventies.co-border.png);
-  }
+.momument a {
+  background: url(../images/the-momument-border.png);
+}
+.adventies a {
+  background: url(../images/adventies.co-border.png);
+}
+.grower a {
+  background: url(../images/grower-border.png);
+}
+.jeetu a {
+  background: url(../images/jeetu-bhai-border.png);
+}
 
   /* * * * * * * * * * *
 MAIN PAGE PROJECT PART END
