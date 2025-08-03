@@ -543,11 +543,13 @@ a:hover {
   justify-content: space-between;
 }
 
-.form-name {
+.form-name-first,
+.form-name-last {
   width: 345px;
 }
 
-.form-name input::spelling-error,
+.form-name-first input::spelling-error,
+.form-name-last input::spelling-error,
 .cont-form-email input::spelling-error {
   text-decoration: none;
 }
@@ -1001,7 +1003,8 @@ CONTACT PAGE CONTACT PART START
     flex-direction: column;
   }
 
-  .form-name {
+  .form-name-first,
+  .form-name-last {
     width: 45%;
   }
 
@@ -1184,7 +1187,8 @@ CONTACT PAGE CONTACT PART START
     flex-direction: column;
   }
 
-  .form-name {
+  .form-name-first,
+  .form-name-last {
     width: 45%;
   }
 
@@ -1374,7 +1378,8 @@ CONTACT PAGE CONTACT PART START
     width: 48%;
   }
 
-  .form-name {
+  .form-name-first,
+  .form-name-last {
     width: 45%;
   }
   /* * * * * * * * * * *
@@ -1532,7 +1537,8 @@ CONTACT PAGE CONTACT PART START
     width: 460px;
   }
 
-  .form-name {
+  .form-name-first,
+  .form-name-last {
     width: 300px;
   }
 

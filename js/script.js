@@ -1,3 +1,4 @@
+// MENU TOGGLE
 let menu = document.getElementById("menuUl");
 let body = document.body;
 
@@ -13,23 +14,16 @@ function toggleMenu() {
   }
 }
 
-// DARK MODE TOGGLE FUNCTIONS //
-
-// SELECTORS
+// DARK MODE TOGGLE FUNCTIONS
 const darkToggleBtn = document.querySelector("#toggle-a");
-
-// STATE
 const theme = localStorage.getItem("theme");
 const toggleImg = localStorage.getItem("toggleImg");
 
-// ON MOUNT
-theme && document.body.classList.add(theme);
-toggleImg && (darkToggleBtn.src = "images/light.png");
+if (theme) document.body.classList.add(theme);
+if (toggleImg) darkToggleBtn.src = "images/light.png";
 
-// HANDLERSX
-handleDarkToggle = () => {
+function handleDarkToggle() {
   document.body.classList.toggle("dark-mode");
-
   if (document.body.classList.contains("dark-mode")) {
     localStorage.setItem("theme", "dark-mode");
     darkToggleBtn.src = "images/light.png";
@@ -39,7 +33,6 @@ handleDarkToggle = () => {
     darkToggleBtn.src = "images/dark.png";
     localStorage.removeItem("toggleImg");
   }
-};
+}
 
-// EVENT
 darkToggleBtn.addEventListener("click", handleDarkToggle);

@@ -77,24 +77,24 @@
           </div>
           <div class="contact-main">
             <div class="contact-form">
-              <form action="">
+              <form action="https://formspree.io/f/xldlwzkn" method="POST">
                 <div class="cont-form-names">
-                  <div class="form-name">
+                  <div class="form-name-first">
                     <label for="first-name">First Name</label>
-                    <input type="text" placeholder="your first name"/>
+                     <input type="text" id="first-name" name="first-name" placeholder="your first name" required />
                   </div>
-                  <div class="form-name">
+                  <div class="form-name-last">
                     <label for="last-name">Last Name</label>
-                    <input type="text" placeholder="your last name"/>
+                    <input type="text" id="last-name" name="last-name" placeholder="your last name" required />
                   </div>
                 </div>
                 <div class="cont-form-email">
                   <label for="email">Email</label>
-                  <input type="email" placeholder="e.g. stron.tim@gmail.com"/>
+                  <input type="email" id="email" name="email" placeholder="e.g. stron.tim@gmail.com" required />
                 </div>
                 <div class="cont-form-message">
                   <label for="message">Message</label>
-                  <textarea name="messaeg" id="message" placeholder="anything you like to say or any work you want to done with me"></textarea>
+                  <textarea name="message" id="message" placeholder="anything you like to say or any work you want to done with me" required></textarea>
                 </div>
                 <button class="cont-form-btn">Send Message</button>
               </form>
