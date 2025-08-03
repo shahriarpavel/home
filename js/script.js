@@ -36,3 +36,43 @@ function handleDarkToggle() {
 }
 
 darkToggleBtn.addEventListener("click", handleDarkToggle);
+
+
+// CUSTOM CURSOR
+const grad = document.querySelector('.cursor-gradient');
+const shadow = document.querySelector('.cursor-shadow');
+let mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
+let gradX = mouseX, gradY = mouseY;
+let shadowX = mouseX, shadowY = mouseY;
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+function animate() {
+  gradX += (mouseX - gradX) * 0.2;
+  gradY += (mouseY - gradY) * 0.2;
+  grad.style.left = gradX + 'px';
+  grad.style.top = gradY + 'px';
+
+  shadowX += (mouseX - shadowX) * 0.08;
+  shadowY += (mouseY - shadowY) * 0.08;
+  shadow.style.left = shadowX + 'px';
+  shadow.style.top = shadowY + 'px';
+
+  requestAnimationFrame(animate);
+}
+animate();
+
+// Add hover effect to all interactive elements
+document.querySelectorAll('a, button, input, textarea, [tabindex], .project-card').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    grad.classList.add('cursor-hover');
+     shadow.classList.add('cursor-hover');
+  });
+  el.addEventListener('mouseleave', () => {
+    grad.classList.remove('cursor-hover');
+     shadow.classList.remove('cursor-hover');
+  });
+});
